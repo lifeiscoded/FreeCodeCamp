@@ -1,7 +1,3 @@
-from ctypes.wintypes import LARGE_INTEGER
-from re import L
-
-
 def arithmetic_arranger(Lst, ShowTotal = None):
     # ----- Definitions ------
     max_limit = 5
@@ -16,7 +12,7 @@ def arithmetic_arranger(Lst, ShowTotal = None):
     sepList = []
     # ------------------------
     
-    if len(Lst) > 5:
+    if len(Lst) > max_limit:
         print(err_max_msg)
         return
     for t in Lst:
